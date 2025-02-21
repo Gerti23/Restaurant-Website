@@ -168,3 +168,34 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+
+// Reservation Form
+
+document.getElementById('reservationForm').addEventListener('submit', function (e) {
+  e.preventDefault(); // Prevent the form from submitting normally
+
+  // Get form data
+  const name = document.getElementById('name').value;
+  const phone = document.getElementById('phone').value;
+  const person = document.getElementById('person').value;
+  const date = document.getElementById('reservation-date').value;
+  const time = document.getElementById('time').value;
+  const message = document.getElementById('message').value;
+
+  // Construct the WhatsApp message
+  const whatsappMessage = `Hello, I would like to book a table at Krahu i Shqiponjes.%0A%0A` +
+    `*Name:* ${name}%0A` +
+    `*Phone:* ${phone}%0A` +
+    `*Number of People:* ${person}%0A` +
+    `*Date:* ${date}%0A` +
+    `*Time:* ${time}%0A` +
+    `*Message:* ${message}`;
+
+  // WhatsApp API link
+  const whatsappLink = `https://wa.me/355699490198?text=${whatsappMessage}`;
+
+  // Redirect to WhatsApp
+  window.open(whatsappLink, '_blank');
+});
+

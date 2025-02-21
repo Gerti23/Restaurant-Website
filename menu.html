@@ -99,13 +99,30 @@
           <p class="section-subtitle label-2">Explore Our</p>
           <h2 class="headline-1 section-title">Delicious Menu</h2>
 
+          <!-- Search Bar -->
+          <div class="menu-search">
+            <input type="text" placeholder="Search for dishes..." class="search-input">
+            <button class="search-btn">Search</button>
+          </div>
+
+          <!-- Filters -->
+          <div class="menu-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="side dish">Side dish</button>
+            <button class="filter-btn" data-filter="salads">Salads</button>
+            <button class="filter-btn" data-filter="soups">Soups</button>
+            <button class="filter-btn" data-filter="pasta">Pasta</button>
+            <button class="filter-btn" data-filter="rissoto">Risotto</button>
+            
+          </div>
+
           <!-- Appetizers -->
-          <div class="menu-category">
+          <div class="menu-category" data-category="breakfast">
             <h3 class="title-3">Breakfast</h3>
             <ul class="grid-list">
               <li>
                 <div class="menu-card hover:card">
-                 
                   <div class="card-content">
                     <h3 class="title-4 card-title">Omelette with vegetables</h3>
                     <span class="span title-2">€3.00</span>
@@ -113,405 +130,271 @@
                   </div>
                 </div>
               </li>
-              <!-- Add more appetizers here -->
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">Ham & cheese Omelette</h3>
-                  <span class="span title-2">€3.00</span>
-                  <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-                </div>
-              </div>
-            </li>
-            <!-- Add more appetizers here -->
-            <div class="menu-card hover:card">
-              <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-              </figure>
-              <div class="card-content">
-                <h3 class="title-4 card-title">Fried eggs</h3>
-                <span class="span title-2">€1.50</span>
-                <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-              </div>
-            </div>
-          </li>
-
-          <div class="menu-card hover:card">
-            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-              <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-            </figure>
-            <div class="card-content">
-              <h3 class="title-4 card-title">Butter</h3>
-              <span class="span title-2">€1.50</span>
-              <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-            </div>
-          </div>
-        </li>
-
-        <div class="menu-card hover:card">
-          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-            <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-          </figure>
-          <div class="card-content">
-            <h3 class="title-4 card-title">Honey</h3>
-            <span class="span title-2">€1.50</span>
-            <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-          </div>
-        </div>
-      </li>
-
-      <div class="menu-card hover:card">
-        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-          <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-        </figure>
-        <div class="card-content">
-          <h3 class="title-4 card-title">White Cheese</h3>
-          <span class="span title-2">€3.00</span>
-          <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-        </div>
-      </div>
-    </li>
-
-    <div class="menu-card hover:card">
-      <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-        <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-      </figure>
-      <div class="card-content">
-        <h3 class="title-4 card-title">Jam</h3>
-        <span class="span title-2">€1.50</span>
-        <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-      </div>
-    </div>
-  </li>
-
-  <div class="menu-card hover:card">
-    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-      <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-    </figure>
-    <div class="card-content">
-      <h3 class="title-4 card-title">Salami</h3>
-      <span class="span title-2">€1.50</span>
-      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-            </div>
-         </div>
-         </li>
-
-         <div class="menu-card hover:card">
-          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-            <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-          </figure>
-          <div class="card-content">
-            <h3 class="title-4 card-title">Yogurt</h3>
-            <span class="span title-2">€1.50</span>
-            <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-          </div>
-        </div>
-      </li>
-
-      <div class="menu-card hover:card">
-        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-          <img src="./assets/images/menu-1.png" width="285" height="336" loading="lazy" alt="Greek Salad" class="img-cover">
-        </figure>
-        <div class="card-content">
-          <h3 class="title-4 card-title">Milk</h3>
-          <span class="span title-2">€1.50</span>
-          <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
-        </div>
-      </div>
-    </li>
-
-    </ul>  
-</div>
-
-          <!-- Main Courses -->
-          <div class="menu-category">
-            <h3 class="title-3">Salads</h3>
-            <ul class="grid-list">
-              <li>
-                <div class="menu-card hover:card">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/menu-2.png" width="285" height="336" loading="lazy" alt="Lasagne" class="img-cover">
-                  </figure>
-                  <div class="card-content">
-                    <h3 class="title-4 card-title">Mixed country salad</h3>
-                    <span class="span title-2">€5.50</span>
-                    <p class="card-text label-1">Layered pasta with meat, cheese, and tomato sauce.</p>
+              
+              <!-- Add more breakfast items here -->
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Ham & cheese Omelette</h3>
+                      <span class="span title-2">€3.00</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
                   </div>
-                </div>
-              </li>
-              <!-- Add more main courses here -->
+                </li>
 
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="./assets/images/menu-2.png" width="285" height="336" loading="lazy" alt="Lasagne" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">Green Salad</h3>
-                  <span class="span title-2">€3.50</span>
-                  <p class="card-text label-1">Layered pasta with meat, cheese, and tomato sauce.</p>
-                </div>
-              </div>
-            </li>
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Fried eggs</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
+                 
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Butter</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
 
-            <div class="menu-card hover:card">
-              <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                <img src="./assets/images/menu-2.png" width="285" height="336" loading="lazy" alt="Lasagne" class="img-cover">
-              </figure>
-              <div class="card-content">
-                <h3 class="title-4 card-title">Caesar salad</h3>
-                <span class="span title-2">€6.50</span>
-                <p class="card-text label-1">Layered pasta with meat, cheese, and tomato sauce.</p>
-              </div>
-            </div>
-          </li>
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Honey</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
 
-          <div class="menu-card hover:card">
-            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-              <img src="./assets/images/menu-2.png" width="285" height="336" loading="lazy" alt="Lasagne" class="img-cover">
-            </figure>
-            <div class="card-content">
-              <h3 class="title-4 card-title">Grilled vegetables</h3>
-              <span class="span title-2">€5.00</span>
-              <p class="card-text label-1">Layered pasta with meat, cheese, and tomato sauce.</p>
-            </div>
-          </div>
-        </li>
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">White cheese</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
 
-        <div class="menu-card hover:card">
-          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-            <img src="./assets/images/menu-2.png" width="285" height="336" loading="lazy" alt="Lasagne" class="img-cover">
-          </figure>
-          <div class="card-content">
-            <h3 class="title-4 card-title">Rocket salad</h3>
-            <span class="span title-2">€5.50</span>
-            <p class="card-text label-1">Layered pasta with meat, cheese, and tomato sauce.</p>
-          </div>
-        </div>
-      </li>
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Jam</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Salami</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Yogurt</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="menu-card hover:card">
+                    <div class="card-content">
+                      <h3 class="title-4 card-title">Milk</h3>
+                      <span class="span title-2">€1,50</span>
+                      <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                    </div>
+                  </div>
+                </li> 
             </ul>
           </div>
 
+          
           <!-- Side dish -->
-          <div class="menu-category">
+          <div class="menu-category" data-category="side dish">
             <h3 class="title-3">Side dish</h3>
             <ul class="grid-list">
               <li>
                 <div class="menu-card hover:card">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                  </figure>
                   <div class="card-content">
                     <h3 class="title-4 card-title">Bruschetta</h3>
-                    <span class="span title-2">€3.00</span>
-                    <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
+                    <span class="span title-2">€1,50</span>
+                    <p class="card-text label-1">Tomatoes, cucumbers, onions, olives, and feta cheese.</p>
+                  </div>
+                </div>
+              </li> 
+            
+          <!-- Salads -->
+          <div class="menu-category" data-category="salads">
+            <h3 class="title-3">Salads</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Mixed country salad</h3>
+                    <span class="span title-2">€5.50</span>
+                    <p class="card-text label-1">Fresh vegetables with a tangy dressing.</p>
                   </div>
                 </div>
               </li>
-              <!-- Add more side dish here -->
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">French fries</h3>
-                  <span class="span title-2">€3.00</span>
-                  <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
+              <!-- Add more salad items here -->
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Green Salad</h3>
+                    <span class="span title-2">€5.50</span>
+                    <p class="card-text label-1">Fresh vegetables with a tangy dressing.</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <!-- Add more side dish here -->
-            <div class="menu-card hover:card">
-              <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-              </figure>
-              <div class="card-content">
-                <h3 class="title-4 card-title">Sour cream</h3>
-                <span class="span title-2">€3.00</span>
-                <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-              </div>
-            </div>
-          </li>
-          <!-- Add more side dish here -->
-          <div class="menu-card hover:card">
-            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-              <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-            </figure>
-            <div class="card-content">
-              <h3 class="title-4 card-title">White cheese</h3>
-              <span class="span title-2">€3.00</span>
-              <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-            </div>
-          </div>
-        </li>
-        <!-- Add more side dish here -->
-        <div class="menu-card hover:card">
-          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-            <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-          </figure>
-          <div class="card-content">
-            <h3 class="title-4 card-title">Baked white cheese</h3>
-            <span class="span title-2">€4.50</span>
-            <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-          </div>
-        </div>
-      </li>
-      <!-- Add more side dish here -->
-      <div class="menu-card hover:card">
-        <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-          <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-        </figure>
-        <div class="card-content">
-          <h3 class="title-4 card-title">Yellow cheese</h3>
-          <span class="span title-2">€4.50€</span>
-          <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-        </div>
-      </div>
-    </li>
-    <!-- Add more side dish here -->
-    <div class="menu-card hover:card">
-      <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-        <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-      </figure>
-      <div class="card-content">
-        <h3 class="title-4 card-title">Village olives</h3>
-        <span class="span title-2">€3.00</span>
-        <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-      </div>
-    </div>
-  </li>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Rocket Salad</h3>
+                    <span class="span title-2">€5.50</span>
+                    <p class="card-text label-1">Fresh vegetables with a tangy dressing.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Caesar Salad</h3>
+                    <span class="span title-2">€5.50</span>
+                    <p class="card-text label-1">Fresh vegetables with a tangy dressing.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Grilled Vegetables</h3>
+                    <span class="span title-2">€5.50</span>
+                    <p class="card-text label-1">Fresh vegetables with a tangy dressing.</p>
+                  </div>
+                </div>
+              </li>
+
             </ul>
           </div>
 
           <!-- Soups -->
-          <div class="menu-category">
+          <div class="menu-category" data-category="soups">
             <h3 class="title-3">Soups</h3>
             <ul class="grid-list">
               <li>
                 <div class="menu-card hover:card">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/menu-4.png" width="285" height="336" loading="lazy" alt="Mojito" class="img-cover">
-                  </figure>
                   <div class="card-content">
-                    <h3 class="title-4 card-title">Vegetables soup</h3>
+                    <h3 class="title-4 card-title">Vegetable soup</h3>
                     <span class="span title-2">€4.50</span>
-                    <p class="card-text label-1">Refreshing mint, lime, and rum cocktail.</p>
+                    <p class="card-text label-1">A hearty mix of seasonal vegetables.</p>
                   </div>
                 </div>
               </li>
-              <!-- Add more soup here -->
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="./assets/images/menu-4.png" width="285" height="336" loading="lazy" alt="Mojito" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">Fish soup</h3>
-                  <span class="span title-2">€5.00</span>
-                  <p class="card-text label-1">Refreshing mint, lime, and rum cocktail.</p>
+              <!-- Add more soup items here -->
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Fish soup</h3>
+                    <span class="span title-2">€4.50</span>
+                    <p class="card-text label-1">A hearty mix of seasonal vegetables.</p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pasta -->
+          <div class="menu-category" data-category="pasta">
+            <h3 class="title-3">Pasta</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Spaghetti Carbonara</h3>
+                    <span class="span title-2">€8.50</span>
+                    <p class="card-text label-1">Creamy pasta with bacon and parmesan.</p>
+                  </div>
+                </div>
+              </li>
+              <!-- Add more pasta items here -->
             </ul>
           </div>
 
 
-               <!-- Pasta -->
-               <div class="menu-category">
-                <h3 class="title-3"></h3>
-                <ul class="grid-list">
-                  <li>
-                    <div class="menu-card hover:card">
-                      <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                        <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                      </figure>
-                      <div class="card-content">
-                        <h3 class="title-4 card-title">Bruschetta</h3>
-                        <span class="span title-2">€3.00</span>
-                        <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <!-- Add more side dish here -->
-                  <div class="menu-card hover:card">
-                    <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                      <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                    </figure>
-                    <div class="card-content">
-                      <h3 class="title-4 card-title">French fries</h3>
-                      <span class="span title-2">€3.00</span>
-                      <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-                    </div>
-                  </div>
-                </li>
-                <!-- Add more side dish here -->
+          <!-- Risotto -->
+          <div class="menu-category" data-category="rissoto">
+            <h3 class="title-3">Risotto</h3>
+            <ul class="grid-list">
+              <li>
                 <div class="menu-card hover:card">
-                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                    <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                  </figure>
                   <div class="card-content">
-                    <h3 class="title-4 card-title">Sour cream</h3>
-                    <span class="span title-2">€3.00</span>
-                    <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
+                    <h3 class="title-4 card-title">Vegetable risotto</h3>
+                    <span class="span title-2">€8.50</span>
+                    <p class="card-text label-1">Creamy pasta with bacon and parmesan.</p>
                   </div>
                 </div>
               </li>
-              <!-- Add more side dish here -->
-              <div class="menu-card hover:card">
-                <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                  <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-                </figure>
-                <div class="card-content">
-                  <h3 class="title-4 card-title">White cheese</h3>
-                  <span class="span title-2">€3.00</span>
-                  <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
+              <!-- Add more risotto items here -->
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Seafood risotto</h3>
+                    <span class="span title-2">€8.50</span>
+                    <p class="card-text label-1">Creamy pasta with bacon and parmesan.</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <!-- Add more side dish here -->
-            <div class="menu-card hover:card">
-              <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-                <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-              </figure>
-              <div class="card-content">
-                <h3 class="title-4 card-title">Baked white cheese</h3>
-                <span class="span title-2">€4.50</span>
-                <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-              </div>
-            </div>
-          </li>
-          <!-- Add more side dish here -->
-          <div class="menu-card hover:card">
-            <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-              <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-            </figure>
-            <div class="card-content">
-              <h3 class="title-4 card-title">Yellow cheese</h3>
-              <span class="span title-2">€4.50€</span>
-              <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-            </div>
-          </div>
-        </li>
-        <!-- Add more side dish here -->
-        <div class="menu-card hover:card">
-          <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
-            <img src="./assets/images/menu-3.png" width="285" height="336" loading="lazy" alt="Cheesecake" class="img-cover">
-          </figure>
-          <div class="card-content">
-            <h3 class="title-4 card-title">Village olives</h3>
-            <span class="span title-2">€3.00</span>
-            <p class="card-text label-1">Creamy cheesecake with a graham cracker crust.</p>
-          </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">Zucchini-shrimp risotto</h3>
+                    <span class="span title-2">€8.50</span>
+                    <p class="card-text label-1">Creamy pasta with bacon and parmesan.</p>
+                  </div>
+                </div>
+              </li>
+
         </div>
-      </li>
-                </ul>
-              </div>
+      </section>
+
+      
+
+      <!-- Social Media Integration -->
+      <section class="section social-media">
+        <div class="container">
+          <h2 class="headline-1 section-title">Follow Us</h2>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
         </div>
       </section>
     </article>
   </main>
 
   <!-- Footer -->
+  
   <footer class="footer section has-bg-image text-center"
     style="background-image: url('./assets/images/footer-bg.jpg')">
     <div class="container">
@@ -571,7 +454,7 @@
           </li>
 
           <li>
-            <a href="#" class="label-2 footer-link hover-underline">Menus</a>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menus</a>
           </li>
 
           <li>
@@ -622,7 +505,6 @@
     </div>
   </footer>
 
-
   <!-- Back to Top Button -->
   <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
@@ -634,6 +516,58 @@
   <!-- Ionicon -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Search and Filter Script -->
+  <script>
+    // Search Functionality
+    const searchInput = document.querySelector('.search-input');
+    const menuItems = document.querySelectorAll('.menu-card');
+
+    searchInput.addEventListener('input', function () {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+
+      // Change search bar color when typing
+      if (searchTerm.length > 0) {
+        searchInput.style.backgroundColor = '#fff3e0'; // Light orange background
+      } else {
+        searchInput.style.backgroundColor = '#fff'; // Default white background
+      }
+
+      menuItems.forEach(item => {
+        const dishName = item.querySelector('.card-title').textContent.toLowerCase();
+        if (dishName.includes(searchTerm)) {
+          item.style.display = 'block'; // Show matching items
+        } else {
+          item.style.display = 'none'; // Hide non-matching items
+        }
+      });
+    });
+
+    // Filter Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const menuCategories = document.querySelectorAll('.menu-category');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        const filterValue = button.getAttribute('data-filter');
+
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // Add active class to the clicked button
+        button.classList.add('active');
+
+        // Show/hide menu categories based on filter
+        menuCategories.forEach(category => {
+          const categoryType = category.getAttribute('data-category');
+          if (filterValue === 'all' || filterValue === categoryType) {
+            category.style.display = 'block'; // Show category
+          } else {
+            category.style.display = 'none'; // Hide category
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
